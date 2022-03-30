@@ -28,7 +28,7 @@ namespace enums
 
             WorldSide westEast = WorldSide.West | WorldSide.East;
             if((westEast & WorldSide.West) != 0) {
-                Console.WriteLine("Includes Left");                                     //  Includes Left
+                Console.WriteLine("Includes West");                                     //  Includes West
             }
 
             string formatted = westEast.ToString();
