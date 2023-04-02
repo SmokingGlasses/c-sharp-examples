@@ -16,23 +16,23 @@ namespace numerictypes
         {
             Console.WriteLine("\nNumberic Literals Example");
 
-            //  decimal
+            // decimal
             int x = 127;
             Console.WriteLine("x : " + x + " (" + x.GetType() + ")");
 
-            //  hex (0x)
+            // hex (0x)
             long y = 0x7f;
             Console.WriteLine("y : " + y + " (" + y.GetType() + ")");
 
-            //  decimal (more readable)
+            // decimal (more readable)
             int million = 1_000_000;
             Console.WriteLine("million : " + million + " (" + million.GetType() + ")");
 
-            //  binary (0b)
+            // binary (0b)
             var b = 0b1010_1011_1100_1101_1110_111;
             Console.WriteLine("b: " + b + " (" + b.GetType() + ")");
 
-            //  decimal and/or exponential notation
+            // decimal and/or exponential notation
             double d = 1.5;
             Console.WriteLine("d : " + d + " (" + d.GetType() + ")");
 
@@ -44,9 +44,9 @@ namespace numerictypes
         {
             Console.WriteLine("\nNumberic Conversions Example");
 
-            int x = 12345;      //  int is a 32-bit integer
-            long y = x;         //  Implicit conversion to 64-bit integer
-            short z = (short)x; //  Explicit conversion to 16-bit integer
+            int x = 12345;      // int is a 32-bit integer
+            long y = x;         // Implicit conversion to 64-bit integer
+            short z = (short)x; // Explicit conversion to 16-bit integer
 
             Console.WriteLine("int x : " + x);
             Console.WriteLine("long y : " + y);

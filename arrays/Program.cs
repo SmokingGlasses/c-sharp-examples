@@ -35,7 +35,7 @@ namespace arrays
             Console.WriteLine("firstPointX : " + firstPointX);
 
             Position[] positions = new Position[500];
-            //int firstPositionX = positions[0].X;    //  Runtime error, NullReferenceException
+            // int firstPositionX = positions[0].X;    // Runtime error, NullReferenceException
 
             for (int i = 0; i < positions.Length; i++)
             {
@@ -47,7 +47,7 @@ namespace arrays
             Console.WriteLine("");
 
 
-            //  Rectangular arrays
+            // Rectangular arrays
             int[,] matrix = new int[3, 3];
 
             for (int i = 0; i < matrix.GetLength(0); i++)
@@ -68,7 +68,7 @@ namespace arrays
                 { 6, 7, 8 }
             };
 
-            //  Jagged arrays
+            // Jagged arrays
             int[][] jaggedArray = new int[3][];
 
             for (int i = 0; i < jaggedArray.Length; i++)

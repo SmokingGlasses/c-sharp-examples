@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace inheritance
 {
     public class Shop : AbstractBusiness
@@ -6,7 +7,7 @@ namespace inheritance
         private long sharesOwned;
         private decimal currentPrice;
 
-        //  Override like a virtual method
+        // Override like a virtual method
         public override decimal NetValue => currentPrice * sharesOwned;
 
         public Shop(long sharesOwned, decimal currentPrice)
@@ -15,7 +16,7 @@ namespace inheritance
             this.currentPrice = currentPrice;
         }
 
-        //  Override like a virtual method
+        // Override like a virtual method
         public override decimal GetNetValue()
         {
             return currentPrice * sharesOwned;

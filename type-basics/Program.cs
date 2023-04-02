@@ -51,18 +51,18 @@ namespace typebasics
             UnitConvertor feetToInchesConvertor = new UnitConvertor(12);
             UnitConvertor milesToFeetConvertor = new UnitConvertor(5280);
 
-            Console.WriteLine(feetToInchesConvertor.Convert(30));   //  360
-            Console.WriteLine(feetToInchesConvertor.Convert(100));  //  1200
-            Console.WriteLine(feetToInchesConvertor.Convert(milesToFeetConvertor.Convert(1)));  //  63360
+            Console.WriteLine(feetToInchesConvertor.Convert(30));   // 360
+            Console.WriteLine(feetToInchesConvertor.Convert(100));  // 1200
+            Console.WriteLine(feetToInchesConvertor.Convert(milesToFeetConvertor.Convert(1)));  // 63360
         }
 
         public static void RunTypesAndConversionsExample()
         {
             Console.WriteLine("\nTypes and Conversions Example");
 
-            int x = 12345;      //  int is a 32-bit integer
-            long y = x;         //  Implicit conversion to 64-bit integer
-            short z = (short)x; //  Explicit conversion to 16-bit integer
+            int x = 12345;      // int is a 32-bit integer
+            long y = x;         // Implicit conversion to 64-bit integer
+            short z = (short)x; // Explicit conversion to 16-bit integer
 
             Console.WriteLine("int x : " + x);
             Console.WriteLine("long y : " + y);
@@ -72,7 +72,7 @@ namespace typebasics
 
     public class UnitConvertor
     {
-        int ratio;  //  Field
+        int ratio;  // Field
 
         public UnitConvertor(int unitRatio)
         {

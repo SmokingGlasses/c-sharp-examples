@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace generics
 {
     public class GenericClass<T, U> where T : SomeClass, I1

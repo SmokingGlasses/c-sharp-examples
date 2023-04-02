@@ -45,22 +45,22 @@ namespace inheritance
         {
             Console.WriteLine("\nCasting and Reference Conversion Example");
 
-            //  Upcasting
+            // Upcasting
             Stock stockUp = new Stock();
             Asset assetUp = stockUp;
 
-            Console.WriteLine("assetUp == stockUp : " + (assetUp == stockUp));          //  True
-            Console.WriteLine("assetUp.Name : " + assetUp.Name);                        //  OK 
-            //  Console.WriteLine("assetUp.SharesOwned : " + assetUp.SharesOwned);      //  Compile-time error
+            Console.WriteLine("assetUp == stockUp : " + (assetUp == stockUp));         // True
+            Console.WriteLine("assetUp.Name : " + assetUp.Name);                       // OK
+            // Console.WriteLine("assetUp.SharesOwned : " + assetUp.SharesOwned);      // Compile-time error
 
-            //  Downcasting
+            // Downcasting
             Stock stockDown = new Stock();
-            Asset assetDown = stockDown;    //  Upcast
-            Stock cast = (Stock)assetDown;  //  Downcast
+            Asset assetDown = stockDown;    // Upcast
+            Stock cast = (Stock)assetDown;  // Downcast
 
-            Console.WriteLine("cast.SharesOwned : " + cast.SharesOwned);        //  OK
-            Console.WriteLine("cast == assetDown : " + (cast == assetDown));    //  True
-            Console.WriteLine("cast == stockDown : " + (cast == stockDown));    //  True
+            Console.WriteLine("cast.SharesOwned : " + cast.SharesOwned);        // OK
+            Console.WriteLine("cast == assetDown : " + (cast == assetDown));    // True
+            Console.WriteLine("cast == stockDown : " + (cast == stockDown));    // True
         }
 
         public static void RunVirtualFunctionExample()
@@ -90,9 +90,9 @@ namespace inheritance
             House house = new House();
             Asset asset = new House();
 
-            Foo(house);                 //  Calls Foo(House house)
-            Foo(asset);                 //  Calls Foo(Asset asset)
-            //  Foo((dynamic)asset);    //  Calls Foo(House house)  
+            Foo(house);                // Calls Foo(House house)
+            Foo(asset);                // Calls Foo(Asset asset)
+            // Foo((dynamic)asset);    // Calls Foo(House house)
         }
     }
 }

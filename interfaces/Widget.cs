@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace interfaces
 {
     public class Widget : I1, I2

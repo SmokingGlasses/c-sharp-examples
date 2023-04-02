@@ -27,7 +27,6 @@ namespace variablesandparameters
             Console.WriteLine("x outside Foo(ref int p) : " + x);
             Console.WriteLine("");
 
-
             string firstName = "David";
             string secondName = "Bagrat";
 
@@ -60,7 +59,7 @@ namespace variablesandparameters
         {
             Console.WriteLine("\nRef Example");
 
-            //  Ref Locals
+            // Ref Locals
             int[] numbers = { 0, 1, 2, 3, 4, 5 };
             ref int numRef = ref numbers[2];
 
@@ -68,23 +67,20 @@ namespace variablesandparameters
             Console.WriteLine("numRef : " + numRef);
             Console.WriteLine("numbers[2] : " + numbers[2]);
 
-
-            //  Ref Returns
+            // Ref Returns
             ref string oldValueRef = ref GetOldValue();
             oldValueRef = "Very Old Value";
             Console.WriteLine(oldValueRef);
-
-            
         }
 
-        //  Passing arguments by value
+        // Passing arguments by value
         public static void Foo(int p)
         {
             p = p + 1;
             Console.WriteLine("p inside Foo(int p) : " + p);
         }
 
-        //  The ref modifier
+        // The ref modifier
         public static void Foo(ref int p)
         {
             p = p + 1;
@@ -98,7 +94,7 @@ namespace variablesandparameters
             b = temp;
         }
 
-        //  The out modifier
+        // The out modifier
         public static void Split(string name, out string firstName, out string lastName)
         {
             int i = name.LastIndexOf(' ');
@@ -107,7 +103,7 @@ namespace variablesandparameters
             lastName = name.Substring(i + 1);
         }
 
-        //  The in modifier
+        // The in modifier
         public static void Boo(int p)
         {
             p++;
@@ -116,7 +112,7 @@ namespace variablesandparameters
 
         public static void Boo(in int p)
         {
-            //p++;  // error
+            // p++;  // error
             Console.WriteLine("p inside Boo(in int p) : " + p);
         }
     }

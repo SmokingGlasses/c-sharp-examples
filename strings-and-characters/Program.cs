@@ -14,14 +14,13 @@ namespace stringsandcharacters
         {
             Console.WriteLine("\nCharacter Type Example");
 
-            char c = 'A';   //  Simple character
-            char newLine = '\n';    //  escape sequence character
-            char backSlash = '\\';  //  escape sequence character
+            char c = 'A';           // Simple character
+            char newLine = '\n';    // escape sequence character
+            char backSlash = '\\';  // escape sequence character
 
             Console.WriteLine("c : " + c);
             Console.WriteLine("backSlash : " + backSlash);
             Console.WriteLine("newLine : " + newLine);
-
 
             char unicodeCopyRightSymbol = '\u00A9';
             char unicodeOmegaSymbol = '\u03A9';
@@ -30,7 +29,6 @@ namespace stringsandcharacters
             Console.WriteLine("unicodeCopyRightSymbol : " + unicodeCopyRightSymbol);
             Console.WriteLine("unicodeOmegaSymbol : " + unicodeOmegaSymbol);
             Console.WriteLine("unicodeNewLine : " + unicodeNewLine);
-
         }
 
         public static void RunStringTypeExample()
@@ -57,7 +55,7 @@ Second Line";
             Console.WriteLine(verbatim);
             Console.WriteLine("");
 
-            //  True if your text editor uses CR-LF line seperators
+            // True if your text editor uses CR-LF line seperators
             Console.WriteLine(escaped == verbatim);
             Console.WriteLine("");
 

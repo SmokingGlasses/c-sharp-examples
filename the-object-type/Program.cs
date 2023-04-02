@@ -18,15 +18,15 @@ namespace theobjecttype
             object obj = x;
 
             int y = (int)obj;
-            //  long z = (long)obj;         //  InvalidCastException
+            // long z = (long)obj;         // InvalidCastException
 
             Console.WriteLine("x        : " + x);
             Console.WriteLine("obj      : " + obj);
             Console.WriteLine("y        : " + y);
 
             double w = 3.5;
-            object myObj = w;               //  3.5 is inferred to be of type double
-            int f = (int)(double)myObj;     //  f is now 3
+            object myObj = w;              // 3.5 is inferred to be of type double
+            int f = (int)(double)myObj;    // f is now 3
 
             Console.WriteLine();
             Console.WriteLine("w        : " + w);
@@ -42,12 +42,12 @@ namespace theobjecttype
             Console.WriteLine("i        : " + i);
             Console.WriteLine("boxed    : " + boxed);
 
-            //  Static type checking
-            //  int e = "4";                //  Compile Error
+            // Static type checking
+            // int e = "4";                // Compile Error
 
-            //  Runtime type checking
+            // Runtime type checking
             object o = "5";
-            //  int p = (int)o;             //  Runtime Error, downcast failed
+            // int p = (int)o;             // Runtime Error, downcast failed
         }
 
         public static void RunTypeCheckingExample()

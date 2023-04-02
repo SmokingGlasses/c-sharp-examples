@@ -16,15 +16,15 @@ namespace generics
             secondVar = temp;
         }
 
-        //  Default Generic Value
+        // Default Generic Value
         public static void Zap<T>(T[] array)
         {
             for (int i = 0; i < array.Length; i++)
             {
                 array[i] = default(T);
 
-                //  or
-                //  array[i] = default;
+                // or
+                // array[i] = default;
             }
         }
 
@@ -51,13 +51,13 @@ namespace generics
             stack.Push(2);
             stack.Push(7);
 
-            int x = stack.Pop();    //  7
-            int y = stack.Pop();    //  2
+            int x = stack.Pop();    // 7
+            int y = stack.Pop();    // 2
 
             Console.WriteLine("x : " + x);
             Console.WriteLine("y : " + y);
 
-            //  var myStack = new Stack<T>(0);  //  Illegal
+            // var myStack = new Stack<T>(0);  // Illegal
 
             int firstVar = 0;
             int secondVar = 1;

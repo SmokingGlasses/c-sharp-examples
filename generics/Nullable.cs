@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace generics
 {
     public class Nullable<T>

@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace inheritance
 {
     public class Stock : Asset

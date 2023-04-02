@@ -15,31 +15,32 @@ namespace enums
 
             BorderSide topSide = BorderSide.Top;
             bool isTop = (topSide == BorderSide.Top);
-            Console.WriteLine("topSide == BorderSide.Top : " + isTop);                  //  True
+            Console.WriteLine("topSide == BorderSide.Top : " + isTop);                  // True
 
             int i = (int)BorderSide.Left;
             BorderSide side = (BorderSide)i;
             bool isLeftOrRight = (int)side <= 2;
-            Console.WriteLine("leftOrRight : " + isLeftOrRight);                        //  True
+            Console.WriteLine("leftOrRight : " + isLeftOrRight);                        // True
 
             HorizontalAlignment h = (HorizontalAlignment)BorderSide.Right;
-            //  same as
+            // same as
             HorizontalAlignment g = (HorizontalAlignment)(int)BorderSide.Right;
 
             WorldSide westEast = WorldSide.West | WorldSide.East;
-            if((westEast & WorldSide.West) != 0) {
-                Console.WriteLine("Includes West");                                     //  Includes West
+            if ((westEast & WorldSide.West) != 0)
+            {
+                Console.WriteLine("Includes West");                                     // Includes West
             }
 
             string formatted = westEast.ToString();
-            Console.WriteLine("formatted : " + formatted);                              //  West, East
+            Console.WriteLine("formatted : " + formatted);                              // West, East
 
             WorldSide worldSide = WorldSide.West;
             worldSide |= WorldSide.East;
-            Console.WriteLine("worldSide == westEast : " + (worldSide == westEast));    //  True
+            Console.WriteLine("worldSide == westEast : " + (worldSide == westEast));    // True
 
-            worldSide ^= WorldSide.East;                                                //  Toggles WorldSide.East
-            Console.WriteLine("worldSide : " + worldSide);                              //  West
+            worldSide ^= WorldSide.East;                                                // Toggles WorldSide.East
+            Console.WriteLine("worldSide : " + worldSide);                              // West
         }
 
         public enum BorderSide : int
@@ -67,30 +68,30 @@ namespace enums
             South = 8
         }
 
-        //  or
+        // or
 
-        //  public enum WorldSide : int
-        //  {
-        //      None = 0,
-        //      West = 1,
-        //      East = 1<<1,
-        //      North = 1<<2,
-        //      South = 1<<3
-        //  }
+        // public enum WorldSide : int
+        // {
+        //     None = 0,
+        //     West = 1,
+        //     East = 1<<1,
+        //     North = 1<<2,
+        //     South = 1<<3
+        // }
 
-        //  or
-        //  including combinations
+        // or
+        // including combinations
 
-        //  public enum WorldSide : int
-        //  {
-        //      None = 0,
-        //      West = 1,
-        //      East = 1<<1,
-        //      North = 1<<2,
-        //      South = 1<<3,
-        //      WestEast = West | East,
-        //      NorthSouth = North | South,
-        //      All = WestEast | NorthSouth
-        //  }
+        // public enum WorldSide : int
+        // {
+        //     None = 0,
+        //     West = 1,
+        //     East = 1<<1,
+        //     North = 1<<2,
+        //     South = 1<<3,
+        //     WestEast = West | East,
+        //     NorthSouth = North | South,
+        //     All = WestEast | NorthSouth
+        // }
     }
 }

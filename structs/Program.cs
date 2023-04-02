@@ -23,8 +23,8 @@ namespace structs
             Point p2 = new Point(1, 1);
             Point p3 = default;
 
-            Foo(new Point());   //  Equivalent to Foo (default);
-            Foo(default);       //  Equivalent to Foo (new Point());
+            Foo(new Point());   // Equivalent to Foo (default);
+            Foo(default);       // Equivalent to Foo (new Point());
         }
 
         public struct Point
@@ -41,16 +41,16 @@ namespace structs
 
         public struct Position
         {
-            //  public int x = 1;                           //  Illegal: field initializer
+            // public int x = 1;                           // Illegal: field initializer
             public int y;
 
-            //  public Point() {}                           //  Illegal: parameterless constructor
-            //  public Point(int x) { this.x = x; }         //  Illegal: must assign field y
+            // public Point() {}                           // Illegal: parameterless constructor
+            // public Point(int x) { this.x = x; }         // Illegal: must assign field y
         }
 
         public readonly struct Vector
         {
-            //  x and y must be readonly
+            // x and y must be readonly
             public readonly int x;
             public readonly int y;
         }

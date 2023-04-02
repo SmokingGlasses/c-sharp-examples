@@ -29,28 +29,28 @@ namespace interfaces
             Console.WriteLine();
 
             RichTextBox richTextBox = new RichTextBox();
-            richTextBox.Error();                            //  RichBoxText.Error()
-            ((IUndoable)richTextBox).Error();               //  RichBoxText.Error()
+            richTextBox.Error();                            // RichBoxText.Error()
+            ((IUndoable)richTextBox).Error();               // RichBoxText.Error()
 
             Console.WriteLine();
 
-            richTextBox.Undo();                             //  RichBoxText.Undo()
-            ((IUndoable)richTextBox).Undo();                //  RichBoxText.Undo();
-            ((TextBox)richTextBox).Undo();                  //  RichBoxText.Undo();
+            richTextBox.Undo();                             // RichBoxText.Undo()
+            ((IUndoable)richTextBox).Undo();                // RichBoxText.Undo();
+            ((TextBox)richTextBox).Undo();                  // RichBoxText.Undo();
 
             Console.WriteLine();
 
-            richTextBox.Log();                              //  RichBoxText.Log();
-            ((IUndoable)richTextBox).Log();                 //  RichBoxText.Log();
-            ((TextBox)richTextBox).Log();                   //  TextBox.Log();
+            richTextBox.Log();                              // RichBoxText.Log();
+            ((IUndoable)richTextBox).Log();                 // RichBoxText.Log();
+            ((TextBox)richTextBox).Log();                   // TextBox.Log();
 
             Console.WriteLine();
 
             S s = new S();
-            s.Foo();                                        //  No boxing
+            s.Foo();                                        // No boxing
 
             I i = s;
-            i.Foo();                                        //  Box occurs when casting to interface
+            i.Foo();                                        // Box occurs when casting to interface
         }
 
         public struct S : I
